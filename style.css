@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 90%;
+    font-family: "Times New Roman", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.nav-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #45a049;
+}
+
+/* Spazio per contenuto */
+.content {
+    padding: 50px 40px 120px;
+    min-height: calc(50vh - 100px);
+}
+
+/* Footer */
+.footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 20px 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
+
+/* Homepage layout */
+.homepage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10px 1px 20px;
+    flex-wrap: wrap;
+}
+
+/* Testi a sinistra */
+.hero-text {
+    flex: 1 1 50%;
+}
+
+.hero-text h1 {
+    font-size: 6.7rem;
+    color: green;
+    margin-bottom: 25px;
+}
+
+.hero-text p {
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+/* Immagine a destra */
+.hero-image {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 665px;
+    height: auto;
+}
+
+/* Link login */
+.login-link-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 80px; /* stacca dal footer */
+}
+
+.login-link {
+    color: blue;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
